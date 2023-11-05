@@ -13,9 +13,16 @@ namespace Marcu_Bogdan_Lab2.Models
         public string LastName { get; set; }
 
 
-        public string getFullname()
+        [Display(Name = "Full Name")]
+        public string FullName
         {
-            return this.FirstName + " " + this.LastName;
+            get
+            {
+                return FirstName + " " + LastName;
+
+            }
+
         }
+        public ICollection<Book>? Books { get; set; }
     }
 }
