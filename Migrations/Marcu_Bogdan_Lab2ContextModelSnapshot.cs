@@ -54,6 +54,9 @@ namespace Marcu_Bogdan_Lab2.Migrations
                     b.Property<int?>("AuthorID")
                         .HasColumnType("int");
 
+                    b.Property<int?>("BorrowingID")
+                        .HasColumnType("int");
+
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(6,2)");
 

@@ -13,9 +13,12 @@ namespace Marcu_Bogdan_Lab2.Models
         public string LastName { get; set; }
 
 
-        public string getFullname()
+        public string? FullName
         {
-            return this.FirstName + " " + this.LastName;
+            get
+            {
+                return FirstName + " " + LastName;
+            }
         }
     }
 }
