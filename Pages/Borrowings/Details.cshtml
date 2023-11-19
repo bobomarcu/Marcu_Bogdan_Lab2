@@ -15,13 +15,13 @@
             @Html.DisplayNameFor(model => model.Borrowing.Member)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Borrowing.Member.Name) <!-- Assuming there is a Name property in the Member model -->
+            @Html.DisplayFor(model => model.Borrowing.Member.FullName)
         </dd>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Borrowing.Book)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Borrowing.Book.Title) <!-- Assuming there is a Title property in the Book model -->
+            @Html.DisplayFor(model => model.Borrowing.Book.Title)
         </dd>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Borrowing.ReturnDate)
